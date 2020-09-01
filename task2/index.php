@@ -54,7 +54,7 @@ function calculate() {
 <div class="center">
     <h1>Task 2</h1>
     <p>Help Petya defeat errors and warnings</p>
-    <form action="/" method="post">
+    <form action="index.php" method="post">
         <h2>Input</h2>
         <div class="row">
             <div class="form-field-2">
