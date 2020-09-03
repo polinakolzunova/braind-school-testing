@@ -3,6 +3,12 @@
 if ( $_POST )
 	$res = calculate();
 
+
+/**
+ * вычисление позиции числа
+ *
+ * @return int|string
+ */
 function calculate() {
     // получаем данные из формы
 	$n   = $_POST['n'] ? $_POST['n'] : 0;
@@ -25,7 +31,13 @@ function calculate() {
 	return array_search( $k, $arr ) + 1;
 }
 
-// шейкерная сортировка
+/**
+ * шейкерная сортировка
+ *
+ * @param $array
+ *
+ * @return array
+ */
 function shaker_sort( $array ) {
     // преобразуем числа в строки, чтобы сравнивать по правилам строк
 	foreach ( $array as $key => $item ) {

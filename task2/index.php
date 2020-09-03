@@ -3,6 +3,11 @@
 if ( $_POST )
 	$res = calculate();
 
+/**
+ * вычисление количества коммитов
+ *
+ * @return int
+ */
 function calculate() {
 	$commit_amount = 0;
 	// получаем количество ошибок и предупреждений из полей ввода
